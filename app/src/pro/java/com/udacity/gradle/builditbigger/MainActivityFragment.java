@@ -1,4 +1,4 @@
-package com.udacity.gradle.builditbigger.free;
+package com.udacity.gradle.builditbigger;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -15,8 +15,7 @@ import android.widget.Toast;
 
 import com.example.eh.myapplication.backend.myApi.MyApi;
 import com.example.jokeviewer.joke_viewer;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
+
 
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
@@ -24,12 +23,9 @@ import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
 import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
 
 import java.io.IOException;
-
-
 /**
- * A simple {@link Fragment} subclass.
+ * Created by Eh on 9/3/2017.
  */
-
 class EndpointsAsyncTask extends AsyncTask<Context, Void, String> {
     private static MyApi myApiService = null;
     private Context context;
@@ -93,8 +89,6 @@ class EndpointsAsyncTask extends AsyncTask<Context, Void, String> {
         }
     }
 }
-
-
 public class MainActivityFragment extends Fragment {
     Button button;
 
@@ -113,18 +107,11 @@ public class MainActivityFragment extends Fragment {
             public void onClick(View v) {
 
 
-                new com.udacity.gradle.builditbigger.free.EndpointsAsyncTask(getActivity()).execute(getActivity());
+                new com.udacity.gradle.builditbigger.EndpointsAsyncTask(getActivity()).execute(getActivity());
 
             }
         });
-        AdView mAdView = (AdView) root.findViewById(R.id.adView);
-        // Create an ad request. Check logcat output for the hashed device ID to
-        // get test ads on a physical device. e.g.
-        // "Use AdRequest.Builder.addTestDevice("ABCDEF012345") to get test ads on this device."
-        AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                .build();
-        mAdView.loadAd(adRequest);
+
         return root;
     }
 

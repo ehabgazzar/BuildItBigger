@@ -178,5 +178,17 @@
     <orderEntry type="module" module-name="jokeviewer" exported="" />
     <orderEntry type="module" module-name="backend" exported="" />
     <orderEntry type="module" module-name="jokelib" exported="" />
+    <orderEntry type="module" module-name="jokeviewer" exported="" />
+    <orderEntry type="module" module-name="backend" exported="" />
+    <orderEntry type="module" module-name="jokelib" exported="" />
+    <orderEntry type="module" module-name="jokeviewer" exported="" />
+    <orderEntry type="module" module-name="backend" exported="" />
+    <orderEntry type="module" module-name="jokelib" exported="" />
+    <orderEntry type="module" module-name="jokeviewer" exported="" />
+    <orderEntry type="module" module-name="backend" exported="" />
+    <orderEntry type="module" module-name="jokelib" exported="" />
+    <orderEntry type="module" module-name="jokeviewer" exported="" />
+    <orderEntry type="module" module-name="backend" exported="" />
+    <orderEntry type="module" module-name="jokelib" exported="" />
   </component>
 </module>
